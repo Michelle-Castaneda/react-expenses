@@ -1,4 +1,6 @@
-// import ExpenseItem from "./components/ExpenseItem";
+import React from 'react';
+
+import NewExpense from './components/NewExpense/NewExpense';
 import Expenses from './components/Expenses/Expenses';
 
 function App() {
@@ -23,9 +25,10 @@ function App() {
         date: new Date(2021, 5, 12),
       },
     ];
+    
   return (
     <div>
-      <h2>Let's get started!</h2>
+      <NewExpense />
       <Expenses expenses={expenses} />
     </div>
   );
